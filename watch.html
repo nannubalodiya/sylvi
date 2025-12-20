@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .header{
+            height: 120px;
+            width: 1282px;
+            background-color: rgb(255, 255, 255);
+            margin-left: -10px;
+            margin-top: -10px;
+
+        }
+        .watch{
+            margin-left: 347px;
+            margin-top: -59px;
+            font-size: 19px;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+        }
+        .collection{
+           margin-left: 466px;
+           margin-top: -22px;
+           font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .accessorie{
+            margin-left: 620px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          
+        }
+        .exclusiv{
+             
+            margin-left: 775px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gifts{
+              margin-left: 905px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .brands{
+              margin-left: 975px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+
+
+
+        .watchdiv{
+            height: 450px;
+            width: 1282px;
+            margin-left: -10px;
+            background-color: rgb(255, 255, 255);
+            animation-name: pro;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+
+        }
+        @keyframes pro {
+            0%{
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+        .menwomen{
+            height: 300px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            
+        }
+        .shopbygender{
+            margin-left: 78px;
+            font-size: 13px;
+            padding-top: 40px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .shopbygender::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #33333382;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -105px;
+         
+        }
+        .shopbygender:hover::after{
+            width: 105px;
+            
+        }
+        .menghadi{
+            margin-left: 129px;
+            margin-top: -31px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .menghadihover{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .menghadihover:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .womenghadi{
+            margin-left: 129px;
+            margin-top: -31px;
+            font-size: 12px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            gap: 5px;
+
+        }
+        .womenvali{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .womenvali:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .viewall{
+            margin-left: 95px;
+            margin-top: 38px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .viewall{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .viewall:hover{
+            transform: translateX(3%) ;
+            max-width: inherit;
+        }
+        
+        .menwomen1{
+            height: 300px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 277px;
+            margin-top: -263px;
+        }
+        .shopbyprice{
+            margin-left: 9px;
+            font-size: 13px;
+            padding-top: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .shopbyprice::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -89px;
+         
+        }
+        .shopbyprice:hover::after{
+            width: 90px;
+            
+        }
+        .under{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .onethousand{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .under1{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        .onethousand1{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand1:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .under2{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+         .onethousand2{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand2:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .viewall1{
+            margin-left: 20px;
+            margin-top: 38px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .viewall1{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .viewall1:hover{
+            transform: translateX(3%) ;
+            max-width: inherit;
+        }
+        .menwomen2{
+             height: 350px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 509px;
+            margin-top: -300px;
+
+        }
+        .shopbystrap{
+             margin-left: 9px;
+            font-size: 13px;
+            padding-top: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .shopbystrap::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -98px;
+         
+        }
+        .shopbystrap:hover::after{
+            width: 100px;
+            
+        }
+        .leather{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+          .onethousand3{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand3:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .steel{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+           .onethousand4{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand4:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .silicone{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .onethousand5{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand5:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .nylon{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .onethousand6{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand6:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .viewall2{
+            margin-left: 20px;
+            margin-top: 38px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .viewall2{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .viewall2:hover{
+            transform: translateX(3%) ;
+            max-width: inherit;
+        }
+        .menwomen3{
+             height: 400px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 742px;
+            margin-top: -350px;
+
+        }
+        .shopbytype{
+             margin-left: 9px;
+            font-size: 13px;
+            padding-top: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .shopbytype::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -83px;
+         
+        }
+        .shopbytype:hover::after{
+            width: 85px;
+            
+        }
+        .digital{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+          .onethousand7{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand7:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .analog{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+          .onethousand8{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand8:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .analogdigital{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+         .onethousand9{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand9:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+           .choro{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .onethousand10{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand10:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .sports{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .onethousand11{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand11:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .viewall3{
+            margin-left: 20px;
+            margin-top: 38px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .viewall3{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .viewall3:hover{
+            transform: translateX(3%) ;
+            max-width: inherit;
+        }
+
+
+
+
+
+
+
+         .menwomen4{
+             height: 350px;
+            width: 200px;
+            background-color: rgb(255, 255, 255);
+            margin-left: 974px;
+            margin-top: -400px;
+
+        }
+        .shopbystyle{
+            margin-left: 9px;
+            font-size: 13px;
+            padding-top: 3px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .shopbystyle::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -98px;
+         
+        }
+        .shopbystyle:hover::after{
+            width: 100px;
+            
+        }
+        .dailywear{
+            margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+          .onethousand12{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand12:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .officewear{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+           .onethousand13{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand13:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .sportswear{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .onethousand14{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand14:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .minimilist{
+             margin-top: -31px;
+            margin-left: 55px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .onethousand15{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .onethousand15:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .viewall4{
+            margin-left: 20px;
+            margin-top: 38px;
+            font-size: 14px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+         .viewall4{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .viewall4:hover{
+            transform: translateX(3%) ;
+            max-width: inherit;
+        }
+        .link1{
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 132px;
+            margin-top: -35px;
+        }
+         .link2{
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 132px;
+            margin-top: -35px;
+        }
+         .link3{
+            
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+        }
+        .link4{
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link5{
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link6{
+             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+        .link7{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link8{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link9{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link10{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link11{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link12{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link13{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+         .link14{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+        .link15{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+        .link16{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+        .link17{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+        .link18{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 48px;
+            margin-top: -27px;
+
+        }
+
+
+        
+        
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+        </style>
+        
+</head>
+<body>
+    <div class="header">
+
+        <img src="https://sylvi.in/cdn/shop/files/Sylvi_Logo_Horizontal_b98e1642-a658-4df5-9ace-cd987eba372f_150x@2x.png?v=1695798423" alt="" style="height: 91px;margin-top: 16px;margin-left: 20px;">
+
+        <div class="onehead">
+
+         <div class="watch"><a href="" style="text-decoration: none;color: #181616;">WATCHES</a></div>
+
+         <div class="collection"><a href="collection.html" style="text-decoration: none;color: #181616;">COLLECTIONS</a></div>
+
+         <div class="accessorie"><a href="acceserious.html" style="text-decoration: none;color: #181616;">ACCESSORIES</a></div>
+
+         <div class="exclusiv"><a href="exclusive.html" style="text-decoration: none;color: #181616;">EXCLUSIVE</a></div>
+
+         <div class="gifts"><a href="" style="text-decoration: none;color: #181616;">GIFTS</a></div>
+
+         <div class="brands"><a href="" style="text-decoration: none;color: #181616;">BRAND</a></div>
+
+        </div>
+
+    </div>
+
+    <div class="watchdiv">
+        <div class="menwomen">
+        <div class="shopbygender">SHOP BY GENDER</div>
+
+        <div class="menghadihover">
+        <img src="https://sylvi.in/cdn/shop/files/men_40x40.png?v=1691638704" alt="" style="margin-left: 74px;margin-top: 30px;">
+        <!-- <div class="menghadi">Men</div> -->
+        <div class="link1"> <a href="menwatch1.html" style="color: black;text-decoration: none;">Men</a></div>
+        </div>
+
+
+     <div class="womenvali">
+        <img src="https://sylvi.in/cdn/shop/files/Velvetine_2830c710-5258-4a7b-87bc-2348e5e808a0_40x40.webp?v=1734769301" alt="" style="margin-left: 74px;margin-top: 35px;">
+       <div class="link2"> <a href="womwnwatch1.html" style="color: black;text-decoration: none;">Women</a></div>
+        </div>
+
+     <div class="viewhover">
+        <div class="viewall">View all</div>   </div>
+         <!-- menwomwn -->
+        </div>
+
+        <!-- <div class="price"> -->
+            <div class="menwomen1">
+                <div class="shopbyprice">SHOP BY PRICE</div>
+
+                <div class="onethousand">
+                    <img src="https://sylvi.in/cdn/shop/files/FRIST_CAMOGREEN_UNDER_RS._1000_500X500_185deba8-a87a-4f77-abde-55f5ce7024ac_40x40.png?v=1691583594" alt="" style="margin-top: 20px;">
+       <div class="link3"> <a href="underone.html" style="color: black;text-decoration: none;">Under $ 1000</a></div>
+                </div>
+
+                <div class="onethousand1">
+                    <img src="https://sylvi.in/cdn/shop/files/IMPERIAL_BLACK_SILVER_UNDER_RS._2000._500X500_4f22d2d0-d74a-41b6-afd6-1e3841ae5651_40x40.png?v=1691583603" alt="" style="margin-top: 38px;">
+       <div class="link4"> <a href="undertwo.html" style="color: black;text-decoration: none;">Under $ 2000</a></div>
+                </div>
+
+                <div class="onethousand2">
+                    <img src="https://sylvi.in/cdn/shop/files/Urbane_40x40.webp?v=1720508199" alt="" style="margin-top: 38px;">
+       <div class="link5"> <a href="underthree.html" style="color: black;text-decoration: none;">Under $ 3000</a></div>
+                </div>
+
+                <div class="viewhover1">
+                    <div class="viewall1">View all</div>
+                </div>
+                <!-- menwomwn1 -->
+            </div>
+
+            <div class="menwomen2">
+                <div class="shopbystrap">SHOP BY STRAP</div>
+
+                <div class="onethousand3">
+                    <img src="https://sylvi.in/cdn/shop/files/TIMEGRAPHER_RED_SL_STEEL_Classic_collection_500x500_309e5905-fc11-497a-a8d1-959cf93cc7b9_40x40.png?v=1691572910" alt="" style="margin-top: 20px;">
+                          <div class="link6"> <a href="underfour.html" style="color: black;text-decoration: none;">Leather Watches</a></div>
+
+                </div>
+
+                <div class="onethousand4">
+                    <img src="https://sylvi.in/cdn/shop/files/TIMEGRAPHER_RED_SL_STEEL_Classic_collection_500x500_309e5905-fc11-497a-a8d1-959cf93cc7b9_40x40.png?v=1691572910" alt="" style="margin-top: 38px;">
+                          <div class="link7"> <a href="underfive.html" style="color: black;text-decoration: none;">Steel Watches</a></div>
+                </div>
+
+                <div class="onethousand5">
+                    <img src="https://sylvi.in/cdn/shop/files/RIG_ONE_O_ONE_BLACK_SILICON_STRAP_500X500_ad0fd666-fbf3-4238-bdd0-cce4a3ab37e3_40x40.png?v=1691638909" alt="" style="margin-top: 38px;">
+                          <div class="link8"> <a href="undersix.html" style="color: black;text-decoration: none;">Silicone Watches</a></div>
+                </div> 
+
+                <div class="onethousand6">
+                    <img src="https://sylvi.in/cdn/shop/files/Sylvi_Nylon_Strap_Watches_Collection_Menu_Icon_Image_40x40.webp?v=1718769409" alt="" style="margin-top: 38px;">
+                          <div class="link9"> <a href="underseven.html" style="color: black;text-decoration: none;">Nylon Watches</a></div>
+                </div>
+
+                 <div class="viewhover2">
+                    <div class="viewall2">View all</div>
+                </div>
+            <!-- menwomen2 -->
+            </div>
+
+            <div class="menwomen3">
+                <div class="shopbytype">SHOP BY TYPE</div>
+
+                <div class="onethousand7">
+                    <img src="https://sylvi.in/cdn/shop/files/SY-2099-BK-SL-BK-SL-ST_100_x100_39ff55da-696c-44e5-8570-6ba820685dbf_40x40.webp?v=1763207278" alt="" style="margin-top: 20px;">
+                          <div class="link10"> <a href="undereight.html" style="color: black;text-decoration: none;">Digital Watches</a></div>
+                </div>
+
+                <div class="onethousand8">
+                    <img src="https://sylvi.in/cdn/shop/files/IMPERIAL_ROSEGOLD_BLACK_TRANDING_500X500_93f38e51-9902-4e29-a005-c155a2220175_40x40.png?v=1691640063" alt="" style="margin-top: 38px;">
+                          <div class="link11"> <a href="undernine.html" style="color: black;text-decoration: none;">Analog Watches</a></div>
+                </div>
+
+                <div class="onethousand9">
+                    <img src="https://sylvi.in/cdn/shop/files/VELOCITY_BLACK_ANALOG_DIGITAL_WATCHES_FOR_MEN_500x500_ee87c616-2ef4-43d2-9fc1-2c8ef84326d2_40x40.png?v=1691639666" alt="" style="margin-top: 38px;">
+                    <div class="link12"> <a href="underten.html" style="color: black;text-decoration: none;">Analog Digital Watches</a></div>
+
+                </div>
+
+                <div class="onethousand10">
+                    <img src="https://sylvi.in/cdn/shop/files/TIMEGRAPHER_GOLDEN_CHRONOGRAPH_WATCHES_FOR_MEN_500x500_c7bf1945-cbe9-45fe-b263-5db55c903f11_40x40.png?v=1691639376" alt="" style="margin-top: 38px;">
+                    <div class="link13"> <a href="undereleven.html" style="color: black;text-decoration: none;"> Chorono Watches</a></div>
+                </div>
+
+                <div class="onethousand11">
+                    <img src="https://sylvi.in/cdn/shop/files/PROTIMER_CLASSY_BLUE_SPORTS_WEAR_WATCHES_FOR_MEN_500x500_d91f64dd-5b09-4478-b3a0-79a0c3099a89_40x40.png?v=1691639065" alt="" style="margin-top: 38px;">
+                    <div class="link14"> <a href="undertwelve.html" style="color: black;text-decoration: none;"> Sports Watches</a></div>
+                </div>
+
+                <div class="viewhover3">
+                    <div class="viewall3">View all</div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+             <div class="menwomen4">
+                <div class="shopbystyle">SHOP BY STYLE</div>
+
+                <div class="onethousand12">
+                    <img src="https://sylvi.in/cdn/shop/files/Sylvi_Watches_Daily_Wear_Collection_Menu_Icon_Image_40x40.webp?v=1718769457" alt="" style="margin-top: 20px;">
+                    <div class="link15"> <a href="undertera.html" style="color: black;text-decoration: none;"> Daily Wear</a></div>
+                </div>
+
+                <div class="onethousand13">
+                    <img src="https://sylvi.in/cdn/shop/files/HAWK_Z_BLACK_OFFICE_WEAR_WATCHES_FOR_MEN_500x500_030721e7-a4d5-403d-a2e6-a482f0407528_40x40.png?v=1691638982" alt="" style="margin-top: 38px;">
+                    <div class="link16"> <a href="underchouda.html" style="color: black;text-decoration: none;"> Office Wear</a></div>
+                </div>
+
+                <div class="onethousand14">
+                    <img src="https://sylvi.in/cdn/shop/files/PROTIMER_CLASSY_BLUE_SPORTS_WEAR_WATCHES_FOR_MEN_500x500_d91f64dd-5b09-4478-b3a0-79a0c3099a89_40x40.png?v=1691639065" alt="" style="margin-top: 38px;">
+                    <div class="link17"> <a href="underpandra.html" style="color: black;text-decoration: none;"> Sports Wear</a></div>
+                </div> 
+
+                <div class="onethousand15">
+                    <img src="https://sylvi.in/cdn/shop/files/Sylvi_Nylon_Strap_Watches_Collection_Menu_Icon_Image_40x40.webp?v=1718769409" alt="" style="margin-top: 38px;">
+                    <div class="link18"> <a href="undersola.html" style="color: black;text-decoration: none;"> Minimilist</a></div>
+                </div>
+
+                 <div class="viewhover4">
+                    <div class="viewall4">View all</div>
+                </div>
+            <!-- menwomen2 -->
+            </div>
+    
+
+        <!-- watchdiv -->
+    </div>
+    
+</body>
+</html>
