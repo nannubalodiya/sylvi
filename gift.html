@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+    .header{
+            height: 120px;
+            width: 1282px;
+            background-color: rgb(255, 255, 255);
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+        .watch{margin-left: 347px;
+            margin-top: -59px;
+            font-size: 19px;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+        }
+        .collection{
+           margin-left: 466px;
+           margin-top: -22px;
+           font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .accessorie{
+            margin-left: 620px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          
+        }
+        .exclusiv{
+             
+            margin-left: 775px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gifts{
+              margin-left: 905px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .brands{
+              margin-left: 980px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .giftwhitebox{
+            height: 500px;
+            width: 1282px;
+            margin-left: -10px;
+            background-color: rgb(255, 255, 255);
+             animation-name: gift;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+
+        }
+        @keyframes gift{
+            0%{
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateY(0%);
+                opacity: 1;
+            }
+        }
+
+        
+       
+        
+        .x{
+            height: 499px;
+            width: 200px;
+            border: 1px solid;
+            margin-left: 100px;
+             border-color: white;
+            
+        }
+        .x1{
+              height: 499px;
+            width: 200px;
+            border: 1px solid;
+            margin-left: 500px;
+            margin-top: -500px;
+            border-color: white;
+            
+        }
+        .x2{
+              height: 499px;
+            width: 200px;
+            border: 1px solid;
+            margin-left: 910px;
+            margin-top: -500px;
+             border-color: white;
+        }
+        .giftfor{
+            margin-top: 59px;
+            margin-left: 70px;
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: red;
+        }
+        .giftfor::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -55px;
+         
+        }
+        .giftfor:hover::after{
+            width: 55px;
+            
+        }
+        .c{
+             margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .c1{
+             margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+          .gmen1{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen1:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .c2{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+          .gmen2{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen2:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .c3{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen3{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen3:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .occasion{
+            margin-top: 59px;
+            margin-left: 70px;
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: red;
+        }
+        .occasion::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -67px;
+         
+        }
+        .occasion:hover::after{
+            width: 67px;
+            
+        }
+        .c4{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen4{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen4:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .c5{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen5{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen5:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .c6{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen6{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen6:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+        .c7{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen7{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen7:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+          .bulk{
+            margin-top: 59px;
+            margin-left: 70px;
+            font-size: small;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: red;
+        }
+        .bulk::after{
+            content: "";
+            position: absolute;
+            height: 2px;
+            width: 0%;
+            background-color: #3333338a;
+            transition: all ease 1s;
+            margin-top: 15px;
+            margin-left: -85px;
+         
+        }
+        .bulk:hover::after{
+            width: 85px;
+            
+        }
+        .c8{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen8{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen8:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .c9{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen9{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen9:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .c10{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen10{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen10:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .c11{
+            margin-top: -32px;
+            margin-left: 80px;
+            font-size: 14px;    
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gmen11{
+            height: none;
+            /* transition: transform 1s ; */
+        }
+        .gmen11:hover{
+            transform: translateX(0.5%) ;
+            max-width: inherit;
+        }
+         .searchbutton{
+            margin-left: 1121px;
+            font-size: 25px;
+            margin-top: -22px;
+        }
+         .user{
+            margin-left: 1175px;
+            font-size: 25px;
+            margin-top: -29px;
+        }
+        .homebutton{
+            margin-left: 1225px;
+            margin-top: -29px;
+            font-size: 25px;
+        }
+
+
+</style>
+</head>
+<body>
+     <div class="header">
+
+        <img src="https://sylvi.in/cdn/shop/files/Sylvi_Logo_Horizontal_b98e1642-a658-4df5-9ace-cd987eba372f_150x@2x.png?v=1695798423" alt="" style="height: 91px;margin-top: 16px;margin-left: 20px;">
+
+        <div class="onehead">
+
+         <div class="watch"><a href="watch.html" style="text-decoration: none;color: #181616;">WATCHES</a></div>
+
+         <div class="collection"><a href="collection.html" style="text-decoration: none;color: #181616;"> COLLECTIONS</a></div>
+
+         <div class="accessorie"><a href="acceserious.html" style="text-decoration: none;color: #181616;">ACCESSORIES</a></div>
+
+         <div class="exclusiv"><a href="exclusive.html" style="text-decoration: none;color: #181616;">EXCLUSIVE</a></div>
+
+         <div class="gifts"><a href="gift.html" style="text-decoration: none;color: #181616;">GIFTS</a></div>
+
+         <div class="brands"><a href="brands.html" style="text-decoration: none;color: #181616;">BRAND</a></div>
+
+        <div class="searchbutton"><a href="search.html"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></a></div>
+
+         <div class="user"><a href="user.html"><i class="fa-regular fa-user" style="color: black;"></i></a></div>
+         <div class="homebutton"><a href="home.html" style="color: #000000;"><i class="fa-regular fa-house"></i></a></div>
+
+        </div>
+
+    </div>
+
+    <div class="giftwhitebox">
+        <div class="x">
+            <div class="giftfor">GIFT FOR</div>
+            <div class="gmen">
+                <img src="https://sylvi.in/cdn/shop/files/SY-837-BK-SL-BK-SL-SI_Ocean_40x40.webp?v=1755057686" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c"><a href="" style="color: black;text-decoration: none;">Men</a></div>
+            </div>
+
+
+            <div class="gmen1">
+                <img src="https://sylvi.in/cdn/shop/files/GIFTS_FOR_FRIEND_RIG_ONE_O_ONE_WHITE_CRYSTAL_500X500_a6792cc1-d681-46f4-b9a3-12c13982cccf_40x40.png?v=1691573118" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c1"><a href=""  style="color: black;text-decoration: none;">Friend</a></div>
+            </div>
+
+             <div class="gmen2">
+                <img src="https://sylvi.in/cdn/shop/files/GIFTS_FOR_HUSBAND_RIG_ONE_O_ONE_GREY_MATT_500X500_52a93328-1306-4000-999b-e1807870a8b6_40x40.png?v=1691583319" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c2"><a href=""  style="color: black;text-decoration: none;">Special One</a></div>
+            </div>
+
+
+             <div class="gmen3">
+                <img src="https://sylvi.in/cdn/shop/files/GIFTS_FOR_FATHERFRIST_KREM_500X500_c27dc92c-9b68-423a-b371-9d47e7d28f2e_40x40.png?v=1691573105" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c3"><a href=""  style="color: black;text-decoration: none;">Father</a></div>
+            </div>
+        </div>
+
+
+
+
+
+
+        <div class="x1">
+            <div class="occasion">OCCASION</div>
+            <div class="gmen4">
+                <img src="https://sylvi.in/cdn/shop/files/FRIST_GREEN_BIRTHDAY_OCCASION_500X500_a5d100e1-6dc4-4820-99f5-f7ea6862a602_40x40.png?v=1691583385" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c4"><a href="" style="color: black;text-decoration: none;">Birthday</a></div>
+            </div>
+
+
+            <div class="gmen5">
+                <img src="https://sylvi.in/cdn/shop/files/Sylvi_Watches_for_Wedding_Collection_Menu_Icon_Image_40x40.webp?v=1718769521" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c5"><a href=""  style="color: black;text-decoration: none;">Weeding</a></div>
+            </div>
+
+             <div class="gmen6">
+                <img src="https://sylvi.in/cdn/shop/files/Starboard_Rosegold_OCCASION_40x40.webp?v=1735023890" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c6"><a href=""  style="color: black;text-decoration: none;">Anniversary</a></div>
+            </div>
+
+
+             <div class="gmen7">
+                <img src="https://sylvi.in/cdn/shop/files/Sylvi_Watches_Gift_for_Promotion_Collection_Menu_Icon_Image_40x40.webp?v=1718769577" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c7"><a href=""  style="color: black;text-decoration: none;">Promotion</a></div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="x2">
+            <div class="bulk">BULK GIFTING</div>
+            <div class="gmen8">
+                <img src="https://sylvi.in/cdn/shop/files/ICONIC_COFFEE_OFFICE_TEAM_BULK_GIFTING_500X500_aae83fee-389e-4231-814e-353953ed56cc_40x40.png?v=1691572143" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c8"><a href="" style="color: black;text-decoration: none;">Office Time</a></div>
+            </div>
+
+
+            <div class="gmen9">
+                <img src="https://sylvi.in/cdn/shop/files/Elegar_BULK_GIFTING_40x40.webp?v=1735028419" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c9"><a href=""  style="color: black;text-decoration: none;">Corporate Time</a></div>
+            </div>
+
+             <div class="gmen10">
+                <img src="https://sylvi.in/cdn/shop/files/Sylvi_Watches_for_Travelling_Team_Collection_Menu_Icon_Image_40x40.webp?v=1718772068" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c10"><a href=""  style="color: black;text-decoration: none;">Travelling Time</a></div>
+            </div>
+
+
+             <div class="gmen11">
+                <img src="https://sylvi.in/cdn/shop/files/Sylvi_Watches_Gift_for_Sports_Team_Collection_Menu_Icon_Image_40x40.webp?v=1718772111" alt="" style="margin-top: 33px;margin-left: 30px;">
+                <div class="c11"><a href=""  style="color: black;text-decoration: none;">Sports Time</a></div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+</html>

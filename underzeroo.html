@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+    <style>
+        .header{
+            height: 120px;
+            width: 1282px;
+            background-color: rgb(255, 255, 255);
+            margin-left: -10px;
+            margin-top: -10px;
+        }
+        .watch{margin-left: 347px;
+            margin-top: -59px;
+            font-size: 19px;
+            text-decoration: none;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+           
+        }
+        .collection{
+           margin-left: 466px;
+           margin-top: -22px;
+           font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .accessorie{
+            margin-left: 620px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          
+        }
+        .exclusiv{
+             
+            margin-left: 775px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .gifts{
+              margin-left: 905px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .brands{
+              margin-left: 975px;
+            margin-top: -22px;
+            font-size: 19px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .searchbutton{
+            margin-left: 1121px;
+            font-size: 25px;
+            margin-top: -22px;
+        }
+           .user{
+            margin-left: 1175px;
+            font-size: 25px;
+            margin-top: -29px;
+        }
+        .homebutton{
+            margin-left: 1225px;
+            margin-top: -29px;
+            font-size: 25px;
+        }
+        .keyframe2{
+        animation-name: pro;
+            animation-duration: 1s;
+            animation-timing-function: ease-out;
+            animation-fill-mode: forwards;
+            opacity: 0;
+
+
+        }
+        @keyframes pro {
+            0%{
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100%{
+                transform: translateX(0%);
+                opacity: 1;
+            }
+        }
+        .wfm{
+            margin-left: 71px;
+            font-size: 22px;
+            margin-top: 38px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .homeunderzeroo{
+            margin-left: 831px;
+            margin-top: -20px;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .wfm2{
+            margin-left: 875px;
+            font-size: 14px;
+            margin-top: -10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .filterzeroo{
+            margin-left: 71px;
+            margin-top: 45px;
+            font-size: 22px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        .sortby{
+           height: 35px;
+            width: 70px;
+            border: 1px solid;
+            margin-top: -43px;
+            margin-left: 1000px;
+           border-color:#e2e2e2;
+            font-size: 13px;
+
+        }
+        .bestselling{
+            margin-left: 853px;
+            margin-top: -47px;
+           
+        }
+        .addcartimage{
+            height: 545px;
+            width: 825px;
+            border: 1px solid;
+            margin-left: 400px;
+            margin-top: -243px;
+            display: flex;
+        }
+        .addcart1{
+            height: 30px;
+            width: 180px;
+            background-color: #18161600;
+            margin-left: -800px;
+            margin-top: 210px;
+            border-radius: 0.2rem;
+            
+        }
+        .addcart1:hover{
+           animation: bounce 2s linear;
+           animation-timing-function: ease-in-out;
+           background-color: #000000e3;
+           color: #e2e2e2;
+
+
+        }
+        @keyframes bounce {
+            20%,50%,80%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            70%{
+                transform: translateY(-15px);
+            }
+            90%{
+                transform: translateY(-4px);
+            }
+            
+        }
+        .addcart2{
+            height: 30px;
+            width: 180px;
+            background-color: #18161600;
+            margin-left: 25px;
+            margin-top: 210px;
+            border-radius: 0.2rem;
+        }
+        .addcart2:hover{
+           animation: bounce 2s linear;
+           animation-timing-function: ease-in-out;
+           background-color: #000000d7;
+           color: #e2e2e2;
+        }
+        @keyframes bounce {
+            20%,50%,80%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            70%{
+                transform: translateY(-15px);
+            }
+            90%{
+                transform: translateY(-4px);
+            }
+            
+        }
+        .addcart3{
+            height: 30px;
+            width: 180px;
+            background-color: #18161600;
+            margin-left: 25px;
+            margin-top: 210px;
+            border-radius: 0.2rem;
+        }
+        .addcart3:hover{
+           animation: bounce 2s linear;
+           animation-timing-function: ease-in-out;
+           background-color: #000000d7;
+           color: #e2e2e2;
+        }
+        @keyframes bounce {
+            20%,50%,80%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            70%{
+                transform: translateY(-15px);
+            }
+            90%{
+                transform: translateY(-4px);
+            }
+            
+        }
+        .addcart4{
+            height: 30px;
+            width: 180px;
+            background-color: #18161600;
+            margin-left: 25px;
+            margin-top: 210px;
+            border-radius: 0.2rem;
+        }
+        .addcart4:hover{
+           animation: bounce 2s linear;
+           animation-timing-function: ease-in-out;
+           background-color: #000000d7;
+           color: #e2e2e2;
+        }
+        @keyframes bounce {
+            20%,50%,80%{
+                transform: translateY(0);
+            }
+            40%{
+                transform: translateY(-30px);
+            }
+            70%{
+                transform: translateY(-15px);
+            }
+            90%{
+                transform: translateY(-4px);
+            }
+            
+        }
+       
+            
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+         
+
+        
+    </style>
+</head>
+<body>
+     <div class="header">
+
+        <img src="https://sylvi.in/cdn/shop/files/Sylvi_Logo_Horizontal_b98e1642-a658-4df5-9ace-cd987eba372f_150x@2x.png?v=1695798423" alt="" style="height: 91px;margin-top: 16px;margin-left: 20px;">
+
+        <div class="onehead">
+
+         <div class="watch"><a href="watch.html" style="text-decoration: none;color: #181616;">WATCHES</a></div>
+
+         <div class="collection"><a href="" style="text-decoration: none;color: #181616;"> COLLECTIONS</a></div>
+
+         <div class="accessorie"><a href="" style="text-decoration: none;color: #181616;">ACCESSORIES</a></div>
+
+         <div class="exclusiv"><a href="" style="text-decoration: none;color: #181616;">EXCLUSIVE</a></div>
+
+         <div class="gifts"><a href="" style="text-decoration: none;color: #181616;">GIFTS</a></div>
+
+         <div class="brands"><a href="" style="text-decoration: none;color: #181616;">BRAND</a></div>
+
+        <div class="searchbutton"><a href="search.html"><i class="fa-solid fa-magnifying-glass" style="color: black;"></i></a></div>
+
+        <div class="user"> <a href="user.html"><i class="fa-regular fa-user" style="color: black;"></i></a></div>
+
+         <div class="homebutton"><a href="home.html" style="color: #000000;"><i class="fa-regular fa-house"></i></a></div>
+
+
+
+
+        </div>
+
+    </div>
+   <div class="keyframe2"> <img src="https://sylvi.in/cdn/shop/collections/Watches-1920x550_copy_2400x.jpg?v=1736331784" alt="" style="margin-left: -10px;width: 1282px;"></div>
+   <div class="wfm">Watches for Men | Best Branded Watch Collection for Men</div>
+   <div class="homeunderzeroo"><a href="home.html" style="text-decoration: none;color: #000000;">Home</a></div>
+   <div class="wfm2">/ Watches for Men | Best Branded Watch Collection for Men</div>
+   <div class="filterzeroo">Filter</div>
+   <hr style="width: 279px;margin-left: 80px;">
+   <div class="sortby"><p style="margin-left: 14px;margin-top: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Sort By</p></div>
+    <div class="bestselling">
+                <select style="margin-left: 220px;width: 134px;height: 37px;margin-top: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 7px;border-color:#e2e2e2;">
+                <option><a href="" style="text-decoration: none;color: #000000;">Best Selling</a></option>
+                <option><a href="" style="text-decoration: none;color: #000000;">Price , low to high</a> </option>
+                <option><a href="" style="text-decoration: none;color: #000000;">Price , high to low</a></option>
+                <option><a href="" style="text-decoration: none;color: #000000;">Featured</a></option>
+                <option><a href="" style="text-decoration: none;color: #000000;">New Arrivals</a></option>
+                </select>
+                </div>
+    <div class="producttype">
+        <select style="margin-left: 76px;width: 274px;height: 37px;margin-top: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 7px;border-color: #ffffff;">
+            <option>Product Type</option>
+          
+        </select>
+        </div>        
+    <hr style="width: 279px;margin-left: 80px;">  
+     <div class="availability">
+        <select style="margin-left: 76px;width: 274px;height: 37px;margin-top: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 7px;border-color: #ffffff;">
+            <option>Availability</option>
+          
+        </select>
+       </div>     
+    <hr style="width: 279px;margin-left: 80px;">  
+    <div class="pricemen">
+        <select style="margin-left: 76px;width: 274px;height: 37px;margin-top: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 7px;border-color: #ffffff;">
+            <option>Price</option>
+          
+        </select>
+        <hr style="width: 279px;margin-left: 80px;">  
+   
+         <div class="collectionmen">
+        <select style="margin-left: 76px;width: 274px;height: 37px;margin-top: 10px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 7px;border-color: #ffffff;">
+            <option>Collection</option>
+          
+        </select>   
+      </div>     
+    <hr style="width: 279px;margin-left: 80px;">  
+    <div class="addcartimage">
+        <div class="addcartimage1">
+            <img src="https://sylvi.in/cdn/shop/files/SYLVI-YD-3022-BROWNLEATHER800X1000_540x.webp?v=1734668736" alt="" style="height: 243px;margin-left: 15px;">
+            
+        </div>
+        <div class="addcartimage2">
+            <img src="https://sylvi.in/cdn/shop/files/SYLVI-YD-3022-BLACKLEATHER800X1000_540x.webp?v=1734668734" alt="" style="height: 243px;margin-left: 10px;">
+        </div>
+         <div class="addcartimage3">
+            <img src="https://sylvi.in/cdn/shop/files/SylviRigOne_OOneWTMaxTransWhiteWatchMainImageExploreBestWatchesforMen800x1000_540x.webp?v=1741602566" alt="" style="height: 243px;margin-left: 10px;">
+        </div>
+         <div class="addcartimage4">
+            <img src="https://sylvi.in/cdn/shop/files/SylviRigOne_OOneWTMaxTransBlackWatchMainImage800x1000_4e2df75e-10d2-4b68-af58-27647fb4dcff_540x.webp?v=1734668622" alt="" style="height: 243px;margin-left: 10px;">
+        </div>
+        
+        <div class="addcart1">
+            <div class="button1" style="color: rgba(255, 255, 255, 0.888);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;margin-top: 5px;">Add To Cart</div>
+          </div>
+        <div class="addcart2">
+            <div class="button2" style="color: rgba(255, 255, 255, 0.921);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;margin-top: 5px;">Add To Cart</div>
+         </div>
+        <div class="addcart3">
+            <div class="button3" style="color: rgba(255, 255, 255, 0.921);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;margin-top: 5px;">Add To Cart</div>
+         </div>  
+        <div class="addcart4">
+            <div class="button4" style="color: rgba(255, 255, 255, 0.921);font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;text-align: center;margin-top: 5px;">Add To Cart</div>
+         </div>    
+       
+         
+    </div>
+
+
+   
+
+
+</body>
+</html>
